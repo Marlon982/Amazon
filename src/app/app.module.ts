@@ -8,6 +8,8 @@ import { FooterComponent } from './assets/footer/footer.component';
 import { IndexComponent } from './assets/index/index.component';
 import { ErrorComponent } from './assets/error/error.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { ErrorComponent } from './assets/error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
