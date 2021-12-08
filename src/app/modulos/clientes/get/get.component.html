@@ -12,7 +12,7 @@
             <th>Ciudad</th>
             <th>Departamento</th>
             <th>Dirección</th>
-            <th >Correo</th>
+            <th>Correo</th>
             <th>Acciones</th>
         </tr>
       </thead>
@@ -26,7 +26,7 @@
           <td>{{p.ciudad}}</td>
           <td>{{p.departamento}}</td>
           <td>{{p.direccion}}</td>
-          <td>{{p.email}}</td>
+          <td>{{p.correo}}</td>
           <td>
             <a routerLink="/clientes/edit/{{p.id}}" class="btn">Editar</a>
             <button class="btn red" (click)="delete(p.id)">Eliminar</button>

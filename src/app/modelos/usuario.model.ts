@@ -6,5 +6,6 @@ export class UsuarioModelo{
     correo?: string;
     token?: string;
     isLoggedIn?: boolean = false;
+    username?: string;
   }
   

@@ -1,10 +1,10 @@
 <nav>
     <div class="nav-wrapper cyan lighten-2">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo">Bienvenido {{nombre}}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li *ngIf="activeSession" ><a routerLink="/admin/get">Usuarios</a></li>
-        <li *ngIf="activeSession"><a routerLink="/encomiendas/get">Encomiendas</a></li>
         <li *ngIf="activeSession"><a routerLink="/clientes/get">Clientes</a></li>
+        <li *ngIf="activeSession"><a routerLink="/encomiendas/get">Encomiendas</a></li>
         <li *ngIf="activeSession"><a routerLink="/servicios/get">Servicios</a></li>
         <!-- <li><a routerLink="/seguridad/login">Login</a></li> --> 
         <!-- Sesion -->

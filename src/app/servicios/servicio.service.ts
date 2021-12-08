@@ -27,6 +27,10 @@ export class ServicioService {
       fecha: servicio.fecha,
       hora: servicio.hora,
       valor: servicio.valor
+    }, {
+      headers: new HttpHeaders({
+        "Authorization": `Bearer ${this.token}`
+      })
     });
   }
 

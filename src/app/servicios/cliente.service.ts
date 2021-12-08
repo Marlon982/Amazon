@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ClienteModelo } from '../modelos/cliente.model';
 import { SeguridadService } from './seguridad.service';
-
+ 
 @Injectable({
   providedIn: 'root'
 })
@@ -31,7 +31,11 @@ export class ClienteService {
       ciudad: cliente.ciudad,
       departamento: cliente.departamento,
       direccion: cliente.direccion,
-      email: cliente.email
+      correo: cliente.correo
+    }, {
+      headers: new HttpHeaders({
+        "Authorization": `Bearer ${this.token}`
+      })
     });
   }
 
@@ -54,7 +58,7 @@ export class ClienteService {
       ciudad: cliente.ciudad,
       departamento: cliente.departamento,
       direccion: cliente.direccion,
-      email: cliente.email
+      correo: cliente.correo
     }, {
       headers: new HttpHeaders({
         "Authorization": `Bearer ${this.token}`

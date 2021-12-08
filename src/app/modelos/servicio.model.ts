@@ -4,5 +4,5 @@ export class ServicioModelo {
     hora?: string;
     valor?: number;
     // ***PENDIENTES FK*****
-    
+     
 }

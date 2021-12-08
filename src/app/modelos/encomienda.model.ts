@@ -4,5 +4,5 @@ export class EncomiendaModelo {
     peso?: number;
     tipo?: string;
     presentacion?: string;
-    
+     
 }

@@ -7,5 +7,6 @@ export class ClienteModelo {
     ciudad?: string;
     departamento?: string;
     direccion?: string;
-    email?: string;
+    correo?: string;
+    
 }

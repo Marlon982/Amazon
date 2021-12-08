@@ -53,7 +53,7 @@ export class UsuarioService {
       })
     });
   }
-
+ 
 
   delete(id: string): Observable<UsuarioModelo[]>{
     return this.http.delete<UsuarioModelo[]>(`${this.url}/usuarios/${id}`, {
